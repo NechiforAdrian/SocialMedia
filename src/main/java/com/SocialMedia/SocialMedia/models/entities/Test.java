@@ -1,6 +1,6 @@
-package com.SocialMedia.SocialMedia.models;
+package com.SocialMedia.SocialMedia.models.entities;
 
-public class Person {
+public class Test {
     private String name;
 
     public String getName() {
