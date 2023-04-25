@@ -11,5 +11,6 @@ public class TestDTO2 {
     public void setUser1(String user1) {
         this.user1 = user1;
 
+
     }
 }
