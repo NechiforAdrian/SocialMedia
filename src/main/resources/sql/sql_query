@@ -1,6 +1,8 @@
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE users
 (
-    id              bigint PRIMARY KEY,
+    id              bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY ,
     first_name      varchar(32),
     last_name       varchar(32),
     email           varchar(32) UNIQUE,
