@@ -1,0 +1,15 @@
+CREATE TABLE users
+(
+    id              bigint PRIMARY KEY,
+    first_name      varchar(32),
+    last_name       varchar(32),
+    email           varchar(32) UNIQUE,
+    username        varchar(32) UNIQUE,
+    user_password   varchar(255),
+    created_at      date,
+    birthday        date,
+    address         varchar(255),
+    phone_number    varchar(15),
+    nr_of_followers bigint,
+    nr_of_following bigint
+);
