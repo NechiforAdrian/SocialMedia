@@ -1,4 +1,4 @@
 package com.SocialMedia.SocialMedia.repositories;
 
-public interface Test {
+public interface UserRepository {
 }
