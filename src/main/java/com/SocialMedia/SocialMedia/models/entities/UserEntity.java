@@ -18,5 +18,4 @@ public class UserEntity {
     private String phoneNumber;
     private int nrOfFollowers;
     private int nrFollowing;
-
 }
