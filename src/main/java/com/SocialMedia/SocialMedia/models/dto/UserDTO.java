@@ -1,22 +1,17 @@
 package com.SocialMedia.SocialMedia.models.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.Data;
 import java.time.LocalDate;
-@Getter
-@Setter
-
+@Data
 public class UserDTO {
 
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String username;
-    public LocalDate birthday;
-    public String address;
-    public String phoneNumber;
-    public int nrOfFollowers;
-    public int nrFollowing;
-
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String username;
+    private LocalDate birthday;
+    private String address;
+    private String phoneNumber;
+    private int nrOfFollowers;
+    private int nrFollowing;
 }
