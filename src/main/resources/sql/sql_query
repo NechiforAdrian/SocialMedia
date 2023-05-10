@@ -1,7 +1,6 @@
 DROP TABLE IF EXISTS users;
 
-CREATE TABLE users
-(
+CREATE TABLE users (
     id              bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY ,
     first_name      varchar(32),
     last_name       varchar(32),
@@ -13,12 +12,11 @@ CREATE TABLE users
     address         varchar(255),
     phone_number    varchar(15),
     nr_of_followers bigint,
-    nr_of_following bigint
-);
+    nr_of_following bigint);
 
 SELECT * FROM users;
 
-INSERT INTO users (first_name,last_name,email,username,user_password,created_at,birthday,address,phone_number,
-nr_of_followers,nr_of_following)
-VALUES ('Ion','gheorghe','iongheorghe@gmail.com','ion2023','admin','2023-05-10','1990-12-12','Romania','123456789'
-,1,2);
+INSERT INTO users
+        (first_name,last_name,email,username,user_password,created_at,birthday,address,phone_number, nr_of_followers,nr_of_following)
+VALUES
+        ('Ion','gheorghe','iongheorghe@gmail.com','ion2023','admin','2023-05-10','1990-12-12','Romania','123456789',1,2);
