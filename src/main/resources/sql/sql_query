@@ -15,3 +15,10 @@ CREATE TABLE users
     nr_of_followers bigint,
     nr_of_following bigint
 );
+
+SELECT * FROM users;
+
+INSERT INTO users (first_name,last_name,email,username,user_password,created_at,birthday,address,phone_number,
+nr_of_followers,nr_of_following)
+VALUES ('Ion','gheorghe','iongheorghe@gmail.com','ion2023','admin','2023-05-10','1990-12-12','Romania','123456789'
+,1,2);
